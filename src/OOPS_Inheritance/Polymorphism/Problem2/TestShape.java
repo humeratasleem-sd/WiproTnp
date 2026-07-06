@@ -1,4 +1,4 @@
-package OOPS_Inheritance.Inheritance.Problem2;
+package OOPS_Inheritance.Polymorphism.Problem2;
 
 class Shape {
 

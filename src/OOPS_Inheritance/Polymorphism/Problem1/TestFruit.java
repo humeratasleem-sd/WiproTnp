@@ -1,4 +1,4 @@
-package OOPS_Inheritance.Inheritance.Problem1;
+package OOPS_Inheritance.Polymorphism.Problem1;
 
 class Fruit {
 
