@@ -1,4 +1,4 @@
-package OOPS_Inheritance.ClassesAndObjects;
+package OOPS_Inheritance.ClassesAndObjects.Problem1;
 
 public class Box {
 	int width;
