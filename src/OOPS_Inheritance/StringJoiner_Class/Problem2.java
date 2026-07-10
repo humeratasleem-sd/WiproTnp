@@ -16,7 +16,6 @@ public class Problem2 {
         s2.add("Delhi");
         s2.add("Pune");
 
-        // s1 merged to s2
         StringJoiner merge1 = new StringJoiner("-");
         merge1.merge(s1);
         merge1.merge(s2);
@@ -24,7 +23,6 @@ public class Problem2 {
         System.out.println("s1 merged to s2:");
         System.out.println(merge1);
 
-        // s2 merged to s1
         StringJoiner merge2 = new StringJoiner("-");
         merge2.merge(s2);
         merge2.merge(s1);
