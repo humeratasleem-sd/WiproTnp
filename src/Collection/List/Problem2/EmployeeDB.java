@@ -1,4 +1,5 @@
 package Collection.List.Problem2;
+
 import java.util.ArrayList;
 
 public class EmployeeDB {
@@ -10,9 +11,9 @@ public class EmployeeDB {
     }
 
     public boolean deleteEmployee(int empId) {
-        for (Employee e : list) {
-            if (e.getEmpId() == empId) {
-                list.remove(e);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getEmpId() == empId) {
+                list.remove(i);
                 return true;
             }
         }
@@ -22,8 +23,8 @@ public class EmployeeDB {
     public String showPaySlip(int empId) {
         for (Employee e : list) {
             if (e.getEmpId() == empId) {
-                return "Pay Slip\nEmployee ID : " + empId +
-                        "\nSalary : " + e.getSalary();
+                return "Pay Slip\nEmployee ID : " + e.getEmpId()
+                        + "\nSalary : " + e.getSalary();
             }
         }
         return "Employee not found";

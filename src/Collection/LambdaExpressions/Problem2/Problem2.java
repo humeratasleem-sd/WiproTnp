@@ -1,7 +1,8 @@
-package Collection.LambdaExpressions;
+package Collection.LambdaExpressions.Problem2;
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class Problem3{
+public class Problem2 {
 
     public static void main(String[] args) {
 
@@ -18,9 +19,8 @@ public class Problem3{
         a1.add("Kiwi");
         a1.add("Peach");
 
-        a1.forEach(str -> {
-            if (str.length() % 2 != 0)
-                System.out.println(str);
-        });
+        Collections.reverse(a1);
+
+        a1.forEach(s -> System.out.println(s));
     }
 }

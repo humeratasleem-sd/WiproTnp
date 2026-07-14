@@ -1,4 +1,4 @@
-package Collection.LambdaExpressions;
+package Collection.LambdaExpressions.Problem1;
 
 import java.util.ArrayList;
 
