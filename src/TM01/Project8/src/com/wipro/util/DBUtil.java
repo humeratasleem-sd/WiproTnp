@@ -1,15 +1,16 @@
-package RDBMS_JDBC_SQL.UsingPreparedSolutionAndProcessingObjects.Problem3;
+package TM01.Project8.src.com.wipro.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class DBUnit {
+public class DBUtil {
 
     public static Connection getConnection() {
 
         Connection con = null;
 
         try {
+
 
         	Class.forName("oracle.jdbc.driver.OracleDriver");
 
@@ -24,4 +25,5 @@ public class DBUnit {
 
         return con;
     }
+
 }
