@@ -148,6 +148,7 @@ version="6.0">
         <url-pattern>/session</url-pattern>
     </servlet-mapping>
 
+
     <!-- Introduction to JSP - Problem 1 -->
 
     <servlet>
@@ -164,18 +165,58 @@ version="6.0">
         <url-pattern>/prime</url-pattern>
     </servlet-mapping>
 
+
     <!-- JavaBeans - Problem 2 -->
 
+    <servlet>
+        <servlet-name>OperationServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.JavaBeans.Problem2.OperationServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OperationServlet</servlet-name>
+
+        <url-pattern>/operation</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- AJAX Database Application -->
+
+    <servlet>
+        <servlet-name>CheckEmailServlet</servlet-name>
+
+        <servlet-class>
+            AJAXDatabaseApplication.CheckEmailServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckEmailServlet</servlet-name>
+
+        <url-pattern>/checkEmail</url-pattern>
+    </servlet-mapping>
+    <!-- AJAX Application - Problem 1 -->
+
 <servlet>
-    <servlet-name>OperationServlet</servlet-name>
+
+    <servlet-name>CityServlet</servlet-name>
+
     <servlet-class>
-        Servlets.JavaBeans.Problem2.OperationServlet
+        AJAXApplication.Problem1.CityServlet
     </servlet-class>
+
 </servlet>
 
 <servlet-mapping>
-    <servlet-name>OperationServlet</servlet-name>
-    <url-pattern>/operation</url-pattern>
+
+    <servlet-name>CityServlet</servlet-name>
+
+    <url-pattern>/city</url-pattern>
+
 </servlet-mapping>
+
 
 </web-app>

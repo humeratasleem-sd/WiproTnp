@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Products">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="Product" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="Code" type="xs:string"/>
+                            <xs:element name="Price" type="xs:decimal"/>
+
+                            <xs:element name="Color" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Red"/>
+                                        <xs:enumeration value="Navy"/>
+                                        <xs:enumeration value="Burgundy"/>
+                                        <xs:enumeration value="Black"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

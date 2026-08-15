@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Student>
+    <StudentID>101</StudentID>
+    <Name>Rahul</Name>
+    <Age>20</Age>
+    <Gender>Male</Gender>
+    <Course>Java</Course>
+</Student>

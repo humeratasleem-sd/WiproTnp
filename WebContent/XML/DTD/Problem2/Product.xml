@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE products SYSTEM "Product.dtd">
+
+<products>
+
+    <product>
+        <code>QWZ5671</code>
+        <price>39.95</price>
+
+        <colors>
+            <color>Red</color>
+            <color>Burgundy</color>
+        </colors>
+
+        <colors>
+            <color>Red</color>
+            <color>Burgundy</color>
+        </colors>
+    </product>
+
+    <product>
+        <code>RRX9856</code>
+        <price>42.50</price>
+
+        <colors>
+            <color>Red</color>
+            <color>Navy</color>
+            <color>Burgundy</color>
+        </colors>
+
+        <colors>
+            <color>Red</color>
+            <color>Navy</color>
+            <color>Burgundy</color>
+            <color>Black</color>
+        </colors>
+    </product>
+
+</products>

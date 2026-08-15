@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StudentRegistration>
+    <Student>
+        <Name>Rahul</Name>
+        <Age>16</Age>
+        <Gender>Male</Gender>
+        <Course>C Programming</Course>
+    </Student>
+</StudentRegistration>
