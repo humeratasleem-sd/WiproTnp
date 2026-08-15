@@ -164,4 +164,18 @@ version="6.0">
         <url-pattern>/prime</url-pattern>
     </servlet-mapping>
 
+    <!-- JavaBeans - Problem 2 -->
+
+<servlet>
+    <servlet-name>OperationServlet</servlet-name>
+    <servlet-class>
+        Servlets.JavaBeans.Problem2.OperationServlet
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>OperationServlet</servlet-name>
+    <url-pattern>/operation</url-pattern>
+</servlet-mapping>
+
 </web-app>
