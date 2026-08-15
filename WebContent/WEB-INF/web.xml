@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+version="6.0">
+
+    <display-name>WiproTNP</display-name>
+
+
+    <!-- Introduction to Servlets - Problem 1 -->
+
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.IntroductionToServlets.Problem1.FirstServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Servlets - Get and Post Requests - Problem 1 -->
+
+    <servlet>
+        <servlet-name>RequestHeadersServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.GetAndPostRequests.Problem1.RequestHeadersServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RequestHeadersServlet</servlet-name>
+
+        <url-pattern>/headers</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Servlets - Get and Post Requests - Problem 2 -->
+
+    <servlet>
+        <servlet-name>RequestParametersServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.GetAndPostRequests.Problem2.RequestParametersServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RequestParametersServlet</servlet-name>
+
+        <url-pattern>/parameters</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Servlet Config and Servlet Context - Problem 1 -->
+
+    <context-param>
+        <param-name>contextName</param-name>
+        <param-value>WiproTNP</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>contextValue</param-name>
+        <param-value>This is Servlet Context Parameter</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>ConfigContextServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.ServletConfigAndContext.Problem1.ConfigContextServlet
+        </servlet-class>
+
+        <init-param>
+            <param-name>servletName</param-name>
+            <param-value>ConfigServlet</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>servletValue</param-name>
+            <param-value>This is Servlet Config Parameter</param-value>
+        </init-param>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConfigContextServlet</servlet-name>
+
+        <url-pattern>/configcontext</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Servlet - Cookies and Session Management - Problem 1 -->
+
+    <servlet>
+        <servlet-name>FirstTimeVisitorServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.CookiesAndSessionManagement.Problem1.FirstTimeVisitorServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstTimeVisitorServlet</servlet-name>
+
+        <url-pattern>/firstvisitor</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Servlet - Cookies and Session Management - Problem 2 -->
+
+    <servlet>
+        <servlet-name>DisplayCookiesServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.CookiesAndSessionManagement.Problem2.DisplayCookiesServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisplayCookiesServlet</servlet-name>
+
+        <url-pattern>/cookies</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Servlet - Cookies and Session Management - Problem 3 -->
+
+    <servlet>
+        <servlet-name>SessionTrackingServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.CookiesAndSessionManagement.Problem3.SessionTrackingServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SessionTrackingServlet</servlet-name>
+
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <!-- Introduction to JSP - Problem 1 -->
+
+    <servlet>
+        <servlet-name>PrimeServlet</servlet-name>
+
+        <servlet-class>
+            Servlets.IntroductionToJSP.Problem1.PrimeServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PrimeServlet</servlet-name>
+
+        <url-pattern>/prime</url-pattern>
+    </servlet-mapping>
+
+</web-app>
