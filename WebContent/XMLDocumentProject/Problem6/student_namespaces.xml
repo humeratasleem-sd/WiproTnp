@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Students
+    xmlns:marks="http://www.wipro.com/marks"
+    xmlns:details="http://www.wipro.com/details">
+
+    <marks:Student>
+        <marks:StudentID>101</marks:StudentID>
+        <marks:TheoryMarks>80</marks:TheoryMarks>
+        <marks:PracticalMarks>90</marks:PracticalMarks>
+        <marks:TotalMarks>170</marks:TotalMarks>
+        <marks:Grade>A</marks:Grade>
+    </marks:Student>
+
+    <details:Student>
+        <details:StudentID>101</details:StudentID>
+        <details:Name>Rahul</details:Name>
+        <details:DOB>10-05-2010</details:DOB>
+        <details:Gender>Male</details:Gender>
+        <details:Course>Java</details:Course>
+    </details:Student>
+
+</Students>

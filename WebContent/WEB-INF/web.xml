@@ -325,5 +325,55 @@
         <welcome-file>ServletLoginModule/Login.html</welcome-file>
     </welcome-file-list>
 
+    <!-- TM14 - Library Management Using AJAX - Email Check -->
+
+<servlet>
+    <servlet-name>LibraryEmailCheckServlet</servlet-name>
+
+    <servlet-class>
+        TM01.AJAXLibraryManagement.EmailCheckServlet
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LibraryEmailCheckServlet</servlet-name>
+
+    <url-pattern>/emailCheck</url-pattern>
+</servlet-mapping>
+
+
+<!-- TM14 - Library Management Using AJAX - Registration -->
+
+<servlet>
+    <servlet-name>LibraryRegisterServlet</servlet-name>
+
+    <servlet-class>
+        TM01.AJAXLibraryManagement.RegisterServlet
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LibraryRegisterServlet</servlet-name>
+
+    <url-pattern>/libraryRegister</url-pattern>
+</servlet-mapping>
+
+
+<!-- TM14 - Library Management Using AJAX - Login -->
+
+<servlet>
+    <servlet-name>LibraryLoginServlet</servlet-name>
+
+    <servlet-class>
+        TM01.AJAXLibraryManagement.LoginServlet
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LibraryLoginServlet</servlet-name>
+
+    <url-pattern>/libraryLogin</url-pattern>
+</servlet-mapping>
+
 
 </web-app>

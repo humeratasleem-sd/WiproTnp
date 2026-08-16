@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>XYZ Library - Registration</title>
+
+    <script src="js/ajax.js"></script>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            width: 130px;
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 8px;
+            width: 250px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+
+        #emailMessage {
+            margin-left: 135px;
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>XYZ Library Registration</h2>
+
+    <form action="register" method="post" onsubmit="return validateForm()">
+
+        <label>Email:</label>
+
+        <input type="text"
+               id="email"
+               name="email"
+               onblur="checkEmail()"
+               required>
+
+        <div id="emailMessage"></div>
+
+
+        <br>
+
+        <label>Password:</label>
+
+        <input type="password"
+               name="password"
+               required>
+
+        <br>
+
+        <label>Name:</label>
+
+        <input type="text"
+               name="name"
+               required>
+
+        <br>
+
+        <label>Date Of Birth:</label>
+
+        <input type="date"
+               name="dob"
+               required>
+
+        <br>
+
+        <label>Gender:</label>
+
+        <select name="gender">
+
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+
+        </select>
+
+        <br>
+
+        <label>Occupation:</label>
+
+        <input type="text"
+               name="occupation"
+               required>
+
+        <br>
+
+        <label>City:</label>
+
+        <input type="text"
+               name="city"
+               required>
+
+        <br>
+
+        <label>Mobile:</label>
+
+        <input type="text"
+               name="mobile"
+               required>
+
+        <br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p>
+        Already registered?
+        <a href="login.html">Login</a>
+    </p>
+
+</div>
+
+</body>
+
+</html>
