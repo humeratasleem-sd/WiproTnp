@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-version="6.0">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+    https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+    version="6.0">
 
     <display-name>WiproTNP</display-name>
 
@@ -198,25 +198,132 @@ version="6.0">
 
         <url-pattern>/checkEmail</url-pattern>
     </servlet-mapping>
+
+
     <!-- AJAX Application - Problem 1 -->
 
-<servlet>
+    <servlet>
+        <servlet-name>CityServlet</servlet-name>
 
-    <servlet-name>CityServlet</servlet-name>
+        <servlet-class>
+            AJAXApplication.Problem1.CityServlet
+        </servlet-class>
+    </servlet>
 
-    <servlet-class>
-        AJAXApplication.Problem1.CityServlet
-    </servlet-class>
+    <servlet-mapping>
+        <servlet-name>CityServlet</servlet-name>
 
-</servlet>
+        <url-pattern>/city</url-pattern>
+    </servlet-mapping>
 
-<servlet-mapping>
 
-    <servlet-name>CityServlet</servlet-name>
+    <!-- TM01 HTML2 Login Application - Login -->
 
-    <url-pattern>/city</url-pattern>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
 
-</servlet-mapping>
+        <servlet-class>
+            TM01.HTML2LoginApp.LoginServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- TM01 HTML2 Login Application - Registration -->
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+
+        <servlet-class>
+            TM01.HTML2LoginApp.RegisterServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- TM01 HTML2 Login Application - Change Password -->
+
+    <servlet>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+
+        <servlet-class>
+            TM01.HTML2LoginApp.ChangePasswordServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+
+        <url-pattern>/changePassword</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- TM01 Servlets Login Module - Login -->
+
+    <servlet>
+        <servlet-name>LoginModuleServlet</servlet-name>
+
+        <servlet-class>
+            TM01.ServletsLoginModule.LoginServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginModuleServlet</servlet-name>
+
+        <url-pattern>/loginModule</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- TM01 Servlets Login Module - Registration -->
+
+    <servlet>
+        <servlet-name>RegisterModuleServlet</servlet-name>
+
+        <servlet-class>
+            TM01.ServletsLoginModule.RegisterServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterModuleServlet</servlet-name>
+
+        <url-pattern>/registerModule</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- TM01 Servlets Login Module - Change Password -->
+
+    <servlet>
+        <servlet-name>ChangePasswordModuleServlet</servlet-name>
+
+        <servlet-class>
+            TM01.ServletsLoginModule.ChangePasswordServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChangePasswordModuleServlet</servlet-name>
+
+        <url-pattern>/changePasswordModule</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Starting Page -->
+
+    <welcome-file-list>
+        <welcome-file>ServletLoginModule/Login.html</welcome-file>
+    </welcome-file-list>
 
 
 </web-app>

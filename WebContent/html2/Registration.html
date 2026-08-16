@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>New User Registration</title>
+
+    <script type="text/javascript">
+
+        function validatePassword() {
+
+            var password = document.getElementById("password").value;
+            var retype = document.getElementById("retype").value;
+
+            if (password == "") {
+                alert("Password should not be empty");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password should contain minimum 6 characters");
+                return false;
+            }
+
+            var number = /[0-9]/;
+
+            if (!number.test(password)) {
+                alert("Password must contain at least one number");
+                return false;
+            }
+
+            var uppercase = /[A-Z]/;
+
+            if (!uppercase.test(password)) {
+                alert("Password must contain at least one uppercase letter");
+                return false;
+            }
+
+            if (password != retype) {
+                alert("Password and Retype Password should be same");
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<center>
+
+    <h2>New User Registration</h2>
+
+    <form action="../register"
+          method="post"
+          onsubmit="return validatePassword()">
+
+        User Name:
+        <input type="text"
+               name="userid"
+               minlength="4"
+               maxlength="8"
+               required>
+
+        <br><br>
+
+        Password:
+        <input type="password"
+               id="password"
+               name="password"
+               required>
+
+        <br><br>
+
+        Retype Password:
+        <input type="password"
+               id="retype"
+               name="retype"
+               required>
+
+        <br><br>
+
+        <input type="submit" value="Add">
+
+    </form>
+
+    <br>
+
+    <a href="Login.html">Back to Login</a>
+
+</center>
+
+</body>
+</html>
